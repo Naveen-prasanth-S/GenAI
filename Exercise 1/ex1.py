@@ -2,10 +2,7 @@ import os
 from dotenv import load_dotenv
 from openai import OpenAI
 
-# Load .env file
 load_dotenv()
-
-# Debug check
 print("API KEY:", os.getenv("GROQ_API_KEY"))
 
 client = OpenAI(
